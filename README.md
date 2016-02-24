@@ -1,4 +1,4 @@
-# vim-uncrustify with zero configuration
+# uncrustify quickly in vim with zero configuration
 
 ## Get it
 
