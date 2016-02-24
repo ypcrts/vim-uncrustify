@@ -1,31 +1,31 @@
-# vim-uncrustify
+# vim-uncrustify with zero configuration
 
-## Installation
+## Get it
 
-### With pathogen
+### Use [vim-plug](https://github.com/junegunn/vim-plug)
 
-Download .tar.gz package, and extract it into ~/.vim/bundle or with `git`:
-
+Add this to your `.vimrc` in the right spot
 ```
-cd ~/.vim/bundle
-git clone https://github.com/Cofyc/vim-uncrustify.git
+Plug 'ypcrts/vim-uncrustify'
 ```
 
-### Without pathogen
+##  Use it
 
-Simply extract package into your ~/.vim folder.
-
-## Usage
-
-Add these in your `.vimrc` file:
-
+Uncrustify your whole file (`%`).
 ```
-autocmd FileType c noremap <buffer> <c-f> :call Uncrustify('c')<CR>
-autocmd FileType c vnoremap <buffer> <c-f> :call RangeUncrustify('c')<CR>
-autocmd FileType cpp noremap <buffer> <c-f> :call Uncrustify('cpp')<CR>
-autocmd FileType cpp vnoremap <buffer> <c-f> :call RangeUncrustify('cpp')<CR>
+:Uncrustify
 ```
 
-## References
+Or select a range and Uncrustify it.
+```
+:'<,'>Uncrustify
+```
 
-- https://github.com/maksimr/vim-jsbeautify
+## Configure it
+
+Don't. There's nothing to configure. The config file used by `uncrustify` is as described in `man 1 uncrustify`. RTFM.
+
+Just make sure `uncrustify` is in your PATH and you're golden.
+
+## Laugh
+There are more lines in this README than there are lines of Vim Script. Now that's documentation.
